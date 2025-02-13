@@ -30,7 +30,7 @@ export default function PurchasesTable() {
     const purchases = data?.purchases || [];
     const totalPages = data?.total ? Math.max(1, Math.ceil(data.total / ITEMS_PER_PAGE)) : 1;
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line
     useEffect(() => {
         if (purchases.length === 0 || currentPage > totalPages) {
             setCurrentPage(1); // Reset to the first page
