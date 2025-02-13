@@ -1,7 +1,6 @@
 "use client";
 
 import { Recipe } from "@/app/lib/definitions";
-import { XMarkIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from "next/image";

@@ -1,4 +1,4 @@
-import { fetchWithErrorHandling } from "../api/hander";
+import { fetchWithErrorHandling } from "../api/handler";
 import { PurchaseResponse } from "./definitions";
 
 const INVENTORY_API = process.env.NEXT_PUBLIC_INVENTORY_API!;

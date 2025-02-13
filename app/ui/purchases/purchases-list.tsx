@@ -1,11 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import useSWR from "swr";
-import PurchasesSkeleton from "../skeletons/purchases";
-import Paginator from "../paginator";
 import { getPurchases } from "@/app/lib/purchases";
 import { useTranslations } from "next-intl";
+import { useEffect, useState } from "react";
+import useSWR from "swr";
+import Paginator from "../paginator";
+import PurchasesSkeleton from "../skeletons/purchases";
 
 const ITEMS_PER_PAGE = 8;
 const POLLING_INTERVAL = 15000;
@@ -30,12 +30,13 @@ export default function PurchasesTable() {
     const purchases = data?.purchases || [];
     const totalPages = data?.total ? Math.max(1, Math.ceil(data.total / ITEMS_PER_PAGE)) : 1;
 
-    // Reset page to 1 if there are no purchases or if the total pages change
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
         if (purchases.length === 0 || currentPage > totalPages) {
             setCurrentPage(1); // Reset to the first page
         }
     }, [purchases, totalPages]);
+
 
     return isLoading ? (
         <PurchasesSkeleton />

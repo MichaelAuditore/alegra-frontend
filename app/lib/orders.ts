@@ -1,4 +1,4 @@
-import { fetchWithErrorHandling } from "../api/hander";
+import { fetchWithErrorHandling } from "../api/handler";
 import {
     OrderResponse,
     OrderStatusRequest,
