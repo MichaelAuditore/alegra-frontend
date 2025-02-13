@@ -34,10 +34,6 @@ export default async function RootLayout({
   const messages = await getMessages();
   const session = await getServerSession(authOptions);
 
-  if (session) {
-    redirect("/restaurant");
-  }
-
   return (
     <html lang={locale}>
       <body
