@@ -8,6 +8,7 @@ import NavbarWithSession from "./ui/navbar/navbar-with-session";
 import NavbarWithoutSession from "./ui/navbar/navbar-without-session";
 import { SessionProvider } from "./ui/session-provider";
 import { authOptions } from "@/auth.config";
+import { redirect } from "next/navigation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,10 @@ export default async function RootLayout({
   const locale = await getLocale();
   const messages = await getMessages();
   const session = await getServerSession(authOptions);
+
+  if (session) {
+    redirect("/restaurant");
+  }
 
   return (
     <html lang={locale}>
