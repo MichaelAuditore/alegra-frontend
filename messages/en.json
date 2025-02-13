@@ -1,0 +1,140 @@
+{
+    "Navbar": {
+        "logout": "Logout"
+    },
+    "Lottery": {
+        "buttonName": "¡Request a plate!",
+        "orderReceived": "Order Received"
+    },
+    "Login": {
+        "title": "Sign in to your restaurant account 🍽️",
+        "email": "Email Address",
+        "password": "Password",
+        "placeholderEmail": "you@example.com",
+        "placeholderPassword": "Enter your password",
+        "signIn": "Sign In",
+        "signingIn": "Signing in...",
+        "error": "Invalid email or password"
+    },
+    "Paginator": {
+        "page": "Page",
+        "prev": "Previous",
+        "next": "Next"
+    },
+    "OrdersStatus": {
+        "errorLoading": "Error with service",
+        "states": {
+            "pending": "Pending Orders",
+            "cooking": "Cooking Orders",
+            "ready": "Ready Orders",
+            "unknown": "Orders Without Recipe"
+        },
+        "noOrders": "No orders on this page.",
+        "recipes": {
+            "burger": "Burger",
+            "rice_with_chicken": "Rice with Chicken",
+            "french_fries": "French Fries",
+            "pizza": "Pizza",
+            "salad": "Salad",
+            "rice_with_meat": "Rice with Meat",
+            "unknown": "To define"
+        },
+        "descriptions": {
+            "burger_description": "A delicious beef burger with fresh vegetables and special sauce.",
+            "rice_with_chicken_description": "A flavorful dish of rice cooked with tender chicken and spices.",
+            "french_fries_description": "Crispy golden fries, lightly salted and perfect as a side dish.",
+            "pizza_description": "Classic Italian pizza with a crispy crust, tomato sauce, cheese, and toppings of your choice.",
+            "salad_description": "A fresh and healthy salad with mixed greens, vegetables, and a light dressing.",
+            "rice_with_meat_description": "A hearty dish of rice combined with seasoned meat and vegetables.",
+            "unknown_description": "To define"
+        }
+    },
+    "Orders": {
+        "showReceivedOrders": "Show Orders",
+        "hideReceivedOrders": "Hide Orders",
+        "noOrders": "No orders on this page.",
+        "errorOrders": "Error fetching orders",
+        "burger": "Burger",
+        "rice_with_chicken": "Rice with Chicken",
+        "french_fries": "French Fries",
+        "pizza": "Pizza",
+        "salad": "Salad",
+        "rice_with_meat": "Rice with Meat",
+        "ingredients": {
+            "cheese": "Cheese",
+            "tomato": "Tomato",
+            "potato": "Potato",
+            "lemon": "Lemon",
+            "rice": "Rice",
+            "chicken": "Chicken",
+            "meat": "meat",
+            "ketchup": "Ketchup",
+            "lettuce": "Lettuce",
+            "onion": "Onion"
+        }
+    },
+    "Recipes": {
+        "title": "Menu Recipes",
+        "portion": "portion(s)",
+        "unknown": "unknown",
+        "burger": "Burger",
+        "rice_with_chicken": "Rice with Chicken",
+        "french_fries": "French Fries",
+        "pizza": "Pizza",
+        "salad": "Salad",
+        "rice_with_meat": "Rice with Meat",
+        "ingredients": {
+            "title": "Ingredients:",
+            "cheese": "Cheese",
+            "tomato": "Tomato",
+            "potato": "Potato",
+            "lemon": "Lemon",
+            "rice": "Rice",
+            "chicken": "Chicken",
+            "meat": "meat",
+            "ketchup": "Ketchup",
+            "lettuce": "Lettuce",
+            "onion": "Onion"
+        }
+    },
+    "LocaleSwitcher": {
+        "es": "Spanish",
+        "en": "English",
+        "label": "Language"
+    },
+    "Inventory": {
+        "title": "Available Ingredients",
+        "errorLoading": "Error with service",
+        "stock": "Stock:",
+        "cheese": "Cheese",
+        "tomato": "Tomato",
+        "potato": "Potato",
+        "lemon": "Lemon",
+        "rice": "Rice",
+        "chicken": "Chicken",
+        "meat": "meat",
+        "ketchup": "Ketchup",
+        "lettuce": "Lettuce",
+        "onion": "Onion"
+    },
+    "Purchases": {
+        "title": "Shopping in the market",
+        "errorLoading": "Error with service",
+        "headers": {
+            "product": "Product",
+            "purchasedStock": "Purchased Stock",
+            "purchasedDate": "Purchased Date"
+        },
+        "stock": "Stock:",
+        "cheese": "Cheese",
+        "tomato": "Tomato",
+        "potato": "Potato",
+        "lemon": "Lemon",
+        "rice": "Rice",
+        "chicken": "Chicken",
+        "meat": "meat",
+        "ketchup": "Ketchup",
+        "lettuce": "Lettuce",
+        "onion": "Onion"
+    }
+}

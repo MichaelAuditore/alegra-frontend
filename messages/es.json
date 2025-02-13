@@ -1,0 +1,141 @@
+{
+    "Navbar": {
+        "logout": "Cerrar sesión"
+    },
+    "Lottery": {
+        "buttonName": "¡Solicita un plato!",
+        "orderReceived": "Orden Recibida"
+    },
+    "Login": {
+        "title": "Inicia sesión en tu cuenta del restaurante 🍽️",
+        "email": "Correo Electrónico",
+        "password": "Contraseña",
+        "placeholderEmail": "tu@ejemplo.com",
+        "placeholderPassword": "Ingresa tu contraseña",
+        "signIn": "Iniciar sesión",
+        "signingIn": "Iniciando sesión...",
+        "error": "Correo o contraseña incorrectos"
+    },
+    "Paginator": {
+        "page": "Página",
+        "prev": "Anterior",
+        "next": "Siguiente"
+    },
+    "OrdersStatus": {
+        "errorLoading": "Problemas con el servicio",
+        "states": {
+            "pending": "Ordenes Pendientes",
+            "cooking": "Ordenes Cocinando",
+            "ready": "Ordenes Entregadas",
+            "unknown": "Ordenes sin un plato definido"
+        },
+        "noOrders": "No hay ordenes en este estado",
+        "recipes": {
+            "unknown": "Desconocido",
+            "burger": "Hamburguesa",
+            "rice_with_chicken": "Arroz con Pollo",
+            "french_fries": "Papas Fritas",
+            "pizza": "Pizza",
+            "salad": "Ensalada",
+            "rice_with_meat": "Arroz con Carne"
+        },
+        "descriptions": {
+            "burger_description": "Una deliciosa hamburguesa de carne con vegetales frescos y salsa especial.",
+            "rice_with_chicken_description": "Un plato sabroso de arroz cocinado con pollo tierno y especias.",
+            "french_fries_description": "Papas fritas doradas y crujientes, ligeramente saladas y perfectas como acompañamiento.",
+            "pizza_description": "Pizza italiana clásica con una base crujiente, salsa de tomate, queso y los ingredientes de tu elección.",
+            "salad_description": "Una ensalada fresca y saludable con hojas verdes, vegetales y un aderezo ligero.",
+            "rice_with_meat_description": "Un plato contundente de arroz combinado con carne sazonada y vegetales.",
+            "unknown_description": "Ordenes sin un plato definido"
+        }
+    },
+    "Orders": {
+        "showReceivedOrders": "Mostrar Ordenes",
+        "hideReceivedOrders": "Ocultar Ordenes",
+        "noOrders": "No hay órdenes en esta página.",
+        "errorOrders": "Error obteniendo las ordenes",
+        "unknown": "Desconocido",
+        "burger": "Hamburguesa",
+        "rice_with_chicken": "Arroz con Pollo",
+        "french_fries": "Papas Fritas",
+        "pizza": "Pizza",
+        "salad": "Ensalada",
+        "rice_with_meat": "Arroz con Carne",
+        "ingredients": {
+            "cheese": "Queso",
+            "tomato": "Tomate",
+            "potato": "Papa",
+            "lemon": "Limon",
+            "rice": "Arroz",
+            "chicken": "Pollo",
+            "meat": "Carne",
+            "ketchup": "Salsa de Tomate",
+            "lettuce": "Lechuga",
+            "onion": "Cebolla"
+        }
+    },
+    "Recipes": {
+        "title": "Menú de Recetas",
+        "portion": "porción(es)",
+        "unknown": "Desconocido",
+        "burger": "Hamburguesa",
+        "rice_with_chicken": "Arroz con Pollo",
+        "french_fries": "Papas Fritas",
+        "pizza": "Pizza",
+        "salad": "Ensalada",
+        "rice_with_meat": "Arroz con Carne",
+        "ingredients": {
+            "title": "Ingredientes:",
+            "cheese": "Queso",
+            "tomato": "Tomate",
+            "potato": "Papa",
+            "lemon": "Limon",
+            "rice": "Arroz",
+            "chicken": "Pollo",
+            "meat": "Carne",
+            "ketchup": "Salsa de Tomate",
+            "lettuce": "Lechuga",
+            "onion": "Cebolla"
+        }
+    },
+    "LocaleSwitcher": {
+        "es": "Español",
+        "en": "English",
+        "label": "Idioma"
+    },
+    "Inventory": {
+        "errorLoading": "Problemas con el servicio",
+        "title": "Ingredientes Disponibles",
+        "stock": "Existencias:",
+        "cheese": "Queso",
+        "tomato": "Tomate",
+        "potato": "Papa",
+        "lemon": "Limon",
+        "rice": "Arroz",
+        "chicken": "Pollo",
+        "meat": "Carne",
+        "ketchup": "Salsa de Tomate",
+        "lettuce": "Lechuga",
+        "onion": "Cebolla"
+    },
+    "Purchases": {
+        "errorLoading": "Problemas con el servicio",
+        "title": "Compras en el Mercado",
+        "headers": {
+            "product": "Producto",
+            "purchasedStock": "Cantidad Comprada",
+            "purchasedDate": "Fecha de Compra"
+        },
+        "stock": "Existencias:",
+        "cheese": "Queso",
+        "tomato": "Tomate",
+        "potato": "Papa",
+        "lemon": "Limon",
+        "rice": "Arroz",
+        "chicken": "Pollo",
+        "meat": "Carne",
+        "ketchup": "Salsa de Tomate",
+        "lettuce": "Lechuga",
+        "onion": "Cebolla"
+    }
+}
