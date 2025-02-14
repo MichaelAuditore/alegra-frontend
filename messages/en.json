@@ -46,10 +46,11 @@
             "pizza_description": "Classic Italian pizza with a crispy crust, tomato sauce, cheese, and toppings of your choice.",
             "salad_description": "A fresh and healthy salad with mixed greens, vegetables, and a light dressing.",
             "rice_with_meat_description": "A hearty dish of rice combined with seasoned meat and vegetables.",
-            "unknown_description": "To define"
+            "unknown_description": "Recipe to define"
         }
     },
     "Orders": {
+        "unknown": "Unknown",
         "showReceivedOrders": "Show Orders",
         "hideReceivedOrders": "Hide Orders",
         "noOrders": "No orders on this page.",

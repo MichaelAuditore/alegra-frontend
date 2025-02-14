@@ -1,6 +1,6 @@
+import { getMenuRecipes } from "@/app/lib/menu";
+import FloatingButton from "@/app/ui/floating-button";
 import { Metadata } from "next";
-import { getMenuRecipes } from "../lib/menu";
-import FloatingButton from "../ui/floating-button";
 
 export const metadata: Metadata = {
     title: "Restaurant - Dashboard",

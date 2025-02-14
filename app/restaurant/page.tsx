@@ -1,9 +1,9 @@
+import IngredientList from "@/app/ui/ingredients/ingredient-list";
+import OrdersListByStatus from "@/app/ui/orders/orders-list-by-status";
+import PurchasesTable from "@/app/ui/purchases/purchases-list";
 import { authOptions } from "@/auth.config";
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
-import IngredientList from "../ui/ingredients/ingredient-list";
-import OrdersListByStatus from "../ui/orders/orders-list-by-status";
-import PurchasesTable from "../ui/purchases/purchases-list";
 
 export default async function Page() {
     const session = await getServerSession(authOptions);
