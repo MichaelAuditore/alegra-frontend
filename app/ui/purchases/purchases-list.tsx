@@ -8,7 +8,7 @@ import Paginator from "../paginator";
 import PurchasesSkeleton from "../skeletons/purchases";
 
 const ITEMS_PER_PAGE = 8;
-const POLLING_INTERVAL = 15000;
+const POLLING_INTERVAL = 25000;
 
 const fetcher = async ([limit, offset]: [number, number]) => {
     const { purchases, total } = await getPurchases(limit, offset);

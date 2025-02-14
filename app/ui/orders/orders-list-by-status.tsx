@@ -10,7 +10,7 @@ import { OrderCardSkeleton } from "../skeletons/order-card";
 import OrderCard from "./order-status-card";
 
 const ORDERS_PER_PAGE = 2;
-const POLLING_INTERVAL = 15000;
+const POLLING_INTERVAL = 25000;
 
 const fetcher = async (
     [status, limit, offset]: [OrderStatusType, number, number]
