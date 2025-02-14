@@ -10,7 +10,19 @@ import { OrderCardSkeleton } from "../skeletons/order-card";
 import OrderCard from "./order-status-card";
 
 const ORDERS_PER_PAGE = 1;
-const POLLING_INTERVAL = 15000;
+
+const getPollingInterval = (status: OrderStatusType) => {
+    switch (status) {
+        case "pending":
+            return 5000;
+        case "cooking":
+            return 10000;
+        case "ready":
+            return 30000;
+        default:
+            return 0;
+    }
+};
 
 const fetcher = async (
     [status, limit, offset]: [OrderStatusType, number, number]
@@ -19,7 +31,7 @@ const fetcher = async (
 export default function OrdersListByStatus({ status }: { status: OrderStatusType }) {
     const t = useTranslations("OrdersStatus");
     const [currentPage, setCurrentPage] = useState(1);
-
+    const POLLING_INTERVAL = getPollingInterval(status);
 
     const {
         data = { orders: [], total: 0 },

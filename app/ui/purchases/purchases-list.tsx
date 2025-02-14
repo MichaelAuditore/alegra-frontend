@@ -21,7 +21,7 @@ export default function PurchasesTable() {
     const offset = (currentPage - 1) * ITEMS_PER_PAGE;
 
     const { data, error, isLoading } = useSWR([ITEMS_PER_PAGE, offset], fetcher, {
-        refreshInterval: POLLING_INTERVAL,
+        refreshInterval: POLLING_INTERVAL
     });
 
     // Handle the error scenario
