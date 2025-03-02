@@ -13,7 +13,7 @@ export default function LotteryButton() {
     async function handleClick() {
         await createOrder()
             .then(() => setShowNotification(true))
-            .finally(() => setTimeout(() => setShowNotification(false), 500));
+            .finally(() => setTimeout(() => setShowNotification(false), 1000));
     }
 
     return (
