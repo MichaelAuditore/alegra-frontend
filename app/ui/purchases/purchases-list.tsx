@@ -58,7 +58,7 @@ export default function PurchasesTable() {
                                 <tr key={index} className="text-center border-t">
                                     <td className="px-4 py-2 border">{t(purchase.key_name)}</td>
                                     <td className="px-4 py-2 border">{purchase.purchasedStock}</td>
-                                    <td className="px-4 py-2 border">{purchase.purchasedDate.toLocaleString()}</td>
+                                    <td className="px-4 py-2 border">{new Date(purchase.purchasedDate).toLocaleString()}</td>
                                 </tr>
                             ))}
                         </tbody>
