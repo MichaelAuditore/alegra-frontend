@@ -1,24 +1,25 @@
 "use client";
 
 import { getPurchases } from "@/app/lib/purchases";
-import { useTranslations } from "next-intl";
+import { useTimeZone, useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import useSWR from "swr";
 import Paginator from "../paginator";
 import PurchasesSkeleton from "../skeletons/purchases";
 
 const ITEMS_PER_PAGE = 8;
-const POLLING_INTERVAL = 60000;
+const POLLING_INTERVAL = 30000;
 
 const fetcher = async ([limit, offset]: [number, number]) => {
     const { purchases, total } = await getPurchases(limit, offset);
     return { purchases, total };
 };
 
-export default function PurchasesTable() {
+export default function PurchasesTable({ locale }: { locale: string }) {
     const t = useTranslations("Purchases");
     const [currentPage, setCurrentPage] = useState(1);
     const offset = (currentPage - 1) * ITEMS_PER_PAGE;
+    const timeZone = useTimeZone();
 
     const { data, error, isLoading } = useSWR([ITEMS_PER_PAGE, offset], fetcher, {
         refreshInterval: POLLING_INTERVAL
@@ -29,14 +30,6 @@ export default function PurchasesTable() {
 
     const purchases = data?.purchases || [];
     const totalPages = data?.total ? Math.max(1, Math.ceil(data.total / ITEMS_PER_PAGE)) : 1;
-
-    // eslint-disable-next-line
-    useEffect(() => {
-        if (purchases.length === 0 || currentPage > totalPages) {
-            setCurrentPage(1); // Reset to the first page
-        }
-    }, [purchases, totalPages]);
-
 
     return isLoading ? (
         <PurchasesSkeleton />
@@ -58,7 +51,19 @@ export default function PurchasesTable() {
                                 <tr key={index} className="text-center border-t">
                                     <td className="px-4 py-2 border">{t(purchase.key_name)}</td>
                                     <td className="px-4 py-2 border">{purchase.purchasedStock}</td>
-                                    <td className="px-4 py-2 border">{new Date(purchase.purchasedDate).toLocaleString()}</td>
+                                    <td className="px-4 py-2 border">
+                                        {
+                                            new Intl.DateTimeFormat(locale, {
+                                                timeZone,
+                                                year: 'numeric',
+                                                month: 'long',
+                                                day: 'numeric',
+                                                hour: '2-digit',
+                                                minute: '2-digit',
+                                                second: '2-digit',
+                                            }).format(new Date(purchase.purchasedDate))
+                                        }
+                                    </td>
                                 </tr>
                             ))}
                         </tbody>
