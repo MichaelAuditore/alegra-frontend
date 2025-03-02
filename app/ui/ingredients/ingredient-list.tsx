@@ -10,7 +10,7 @@ import Paginator from "../paginator";
 import { IngredientSkeleton } from "../skeletons/ingredients";
 
 const INGREDIENTS_PER_PAGE = 4;
-const POLLING_INTERVAL = 25000;
+const POLLING_INTERVAL = 20000;
 
 const fetcher = async () => await getIngredientList();
 

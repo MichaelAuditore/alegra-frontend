@@ -16,11 +16,11 @@ const getPollingInterval = (status: OrderStatusType) => {
         case "pending":
             return 5000;
         case "cooking":
-            return 10000;
+            return 20000;
         case "ready":
-            return 30000;
+            return 20000;
         default:
-            return 0;
+            return 1000;
     }
 };
 
