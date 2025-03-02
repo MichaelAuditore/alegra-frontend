@@ -2,7 +2,7 @@
 
 import { getPurchases } from "@/app/lib/purchases";
 import { useTimeZone, useTranslations } from "next-intl";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import useSWR from "swr";
 import Paginator from "../paginator";
 import PurchasesSkeleton from "../skeletons/purchases";
